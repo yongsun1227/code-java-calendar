@@ -9,7 +9,7 @@ public class example2 {
 		return MAX_DAYS[month - 1];
 	}
 
-	public void printSampleCalendar() {
+	public void printSampleCalendar1() {
 		System.out.println("일  월  화  수  목  금  토");
 		System.out.println("--------------- ");
 		System.out.println("1  2  3  4  5  6  7");
@@ -17,6 +17,13 @@ public class example2 {
 		System.out.println("15 16 17 18 19 20 21");
 		System.out.println("22 23 24 25 26 27 28");
 	}
+	public void printSampleCalendar2() {
+		System.out.println("29 30 31 ");
+	}
+	public void printSampleCalendar3() {
+		System.out.println("29 30 ");
+	}
+	
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -25,7 +32,7 @@ public class example2 {
 		int month = scanner.nextInt();
 		System.out.printf("%d월은 %d일까지 있습니다.\n", month, ex2.getMaxDaysOfMonth(month));
 
-		ex2.printSampleCalendar();
+		ex2.printSampleCalendar1();
 		scanner.close();
 
 	}
